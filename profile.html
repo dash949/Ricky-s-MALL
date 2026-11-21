@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<section class="card"><h1>Profile</h1><p>Discord username: {{ user.username }}</p><form method="post"><label>Display name<input name="custom_name" maxlength="32" value="{{ user.custom_name }}"></label><button>Save profile</button></form></section>{% endblock %}

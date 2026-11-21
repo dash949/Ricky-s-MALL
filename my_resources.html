@@ -1,0 +1,1 @@
+{% extends "base.html" %}{% block content %}<h1>My Resources</h1><div class="grid">{% for r in resources %}<article class="card"><h3>{{ r.title }}</h3><p>{{ r.description }}</p><a class="button" href="/download/{{ r.id }}">Download</a></article>{% else %}<p>No unlocked resources yet.</p>{% endfor %}</div>{% endblock %}
